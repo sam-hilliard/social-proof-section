@@ -2,9 +2,6 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
 }
@@ -30,4 +27,96 @@ body {
     font-size: 0.9375rem;
     font-family: var(--main-font);
     font-weight: 400;
+    color: var(--dark-grayish-magenta);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 0.75;
+    margin-bottom: 1rem;
+}
+
+h1, .rating-card__text {
+    color: var(--dark-magenta);
+    font-weight: 700;
+}
+
+/* Container layout */
+.container {
+    display: grid;
+    padding: 15% 5%;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+}
+
+/* intro section */
+.intro {
+    text-align: center;
+}
+
+/* rating cards */
+.ratings-container {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+}
+
+.rating-card {
+    background-color: var(--light-grayish-magenta);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* review cards */
+.review-card-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.review-card {
+    color: var(--white);
+    font-weight: 500;
+    background-color: var(--dark-magenta);
+
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 17.5px 17.5px 1fr;
+    grid-template-areas:
+    "profile name"
+    "profile subtitle"
+    "body body";
+    align-items: center;
+    column-gap: 0.75rem;
+
+    padding: 2rem 3rem;
+}
+
+.review-card__profile-pic {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    grid-area: profile;
+}
+.review-card__header {
+    font-weight: 700;
+    grid-area: name;
+}
+
+.review-card__subheader {
+    color: var(--soft-pink);
+    font-weight: 400;
+    grid-area: subtitle;
+}
+
+.review-card__body {
+    margin-top: 1.5rem;
+    grid-area: body;
 }
