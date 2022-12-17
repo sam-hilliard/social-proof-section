@@ -45,11 +45,11 @@ h1, .rating-card__text {
 /* Container layout */
 .container {
     display: grid;
-    padding: 5rem;
+    padding: 5rem 1rem;
     justify-items: center;
     gap: 2rem;
 
-    width: min(100%, 750px);
+    width: min(100%, 450px);
     margin: 0 auto;
 }
 
