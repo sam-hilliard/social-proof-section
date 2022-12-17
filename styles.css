@@ -142,14 +142,15 @@ h1, .rating-card__text {
 /* Desktop Layout */
 @media only screen and (width >= 1440px) {
     .container {
+        display: grid;
+        gap: 3rem;
         grid-template-columns: 1.5fr 1fr;
         grid-template-areas: 
             "intro ratings"
             "reviews reviews";
 
         justify-items: start;
-
-        width: 1200px;
+        width: min(1100px, 100%);
     }
 
     .intro {
