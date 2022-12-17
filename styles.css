@@ -132,6 +132,12 @@ h1, .rating-card__text {
     grid-area: body;
 }
 
+/* attribution */
+.attribution {
+    text-align: center;
+    padding: 2rem 0;
+}
+
 
 /* Desktop Layout */
 @media only screen and (width >= 1440px) {
